@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>redirection #4 (travvy quizlet t3 kq#2-6)</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="icon" href="mydog.ico" type="image/x-icon"> <!-- Replace 'mydog.ico' with your favicon file -->
+
+    <style>
+        /* Full height and width layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden; /* Prevent scrollbars during progress bar animation */
+        }
+
+        .center-text {
+            font-size: 3em;
+            font-weight: 800;
+            text-align: center;
+            color: #333;
+            position: relative;
+        }
+
+        .icon-spot {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .icon-spot img {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .bottom-left-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 1.2em;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .progress-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the progress bar horizontally */
+        }
+
+        .progress-bar {
+            width: 70%; /* Adjust width to make it less wide */
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            height: 30px; /* Increased height for a taller progress bar */
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(to right, #dc12ea, #5908da); /* Gradient from black to red */
+            width: 0;
+            transition: width 0.1s linear;
+        }
+
+        .percentage {
+            margin-top: 5px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    </style>
+
+    <script>
+        // Redirect after 4 seconds
+        setTimeout(function(){
+            window.location.href = "https://quizlet.com/949899150/travvy-kq2-6-quizlet-dm-me-for-corrections-flash-cards/?i=5knuu1&x=1jqt";
+        }, 3500);
+
+        // Progress bar logic
+        window.onload = function() {
+            const progressBarFill = document.querySelector('.progress-bar-fill');
+            const percentageText = document.querySelector('.percentage');
+            let width = 0;
+
+            const interval = setInterval(() => {
+                width += 100 / 35; // Increment by 2.5% every 0.1 seconds
+                progressBarFill.style.width = `${width}%`;
+                percentageText.textContent = `${Math.round(width)}%`;
+
+                if (width >= 100) {
+                    clearInterval(interval);
+                }
+            }, 100);
+        };
+    </script>
+</head>
+<body>
+    <div class="center-text">
+        <h1>welcome! you should be redirected soon.</h1>
+        <div>
+            <h3>redirect: travvy t3/kq#2-6 quizlet</h3>
+        </div>
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <div class="percentage">0%</div>
+        </div>
+    </div>
+    
+    <div class="icon-spot">
+        <img src="mellowv2.png" alt="Icon" width="100" height="100">
+    </div>
+
+    <div class="bottom-left-text">
+        <p>Made with ❤️ by Aryan J.</p>
+    </div>
+</body>
+</html>
